@@ -573,7 +573,7 @@ $(function () {
   $(".nav-btn").on("click", function () {
     $(this).toggleClass("open");
   });
-  $("#header-section").append(headerContent);
+  $("header").append(headerContent);
 
   $("footer").append(footerContent);
 

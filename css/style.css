@@ -120,14 +120,14 @@ a[type="button"] {
 }
 
 .button-fill {
-    background:var(--accent-color) ;
-    color: var(--dark-2);
+  background: var(--accent-color);
+  color: var(--dark-2);
 }
 
 .button-fill:hover {
-    /* background:var(--accent-color) ; */
-    background: none;
-    border-color: currentColor;
+  /* background:var(--accent-color) ; */
+  background: none;
+  border-color: currentColor;
 }
 
 .button:hover {
@@ -929,6 +929,65 @@ a {
   z-index: 0;
   /* background-image: url(../image/thumb.png); */
   /* background-size: cover; */
+}
+.h-screen {
+  height: calc(100vh - 90px);
+}
+.hero-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.text-accent {
+  color: var(--accent-color);
+}
+
+#ticker_wrapper {
+  overflow: hidden;
+}
+
+.ticker {
+  display: flex;
+  width: auto;
+}
+
+.ticker__list {
+  width: auto;
+
+  display: flex;
+  margin: 0;
+  animation: ticker 60s infinite linear;
+  align-items: center;
+}
+
+.ticker:hover .ticker__list {
+  animation-play-state: paused;
+}
+
+.ticker__item {
+  margin-right: 60px;
+  width: 200px;
+}
+.ticker__item img {
+  max-width: 100%;
+  display: block;
+  margin: auto;
+  max-height: 150px;
+  object-fit: cover;
+  filter: grayscale(1);
+}
+.ticker__item img:hover {
+  filter: grayscale(0);
+}
+.ticker__item svg.blue polygon {
+  fill: #294a5b;
+}
+@keyframes ticker {
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 @media only screen and (max-width: 993px) {
