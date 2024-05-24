@@ -13,7 +13,6 @@ function initMap() {
     (place, status) => {
       if (status === google.maps.places.PlacesServiceStatus.OK) {
         displayReviews(place.reviews);
-        console.log("asdf");
       } else {
         console.error("Place details request failed:", status);
       }
@@ -25,7 +24,6 @@ function displayReviews(reviews) {
 
   reviews.forEach((review) => {
 
-    console.log(review);
     const reviewElement = $(`
         <div class="swiper-slide ">
             <div class="d-flex flex-column p-4 gap-3 bg-secondary-dark">

@@ -622,14 +622,45 @@ a {
   background-size: cover;
   background-position: center;
   position: relative;
+  /* cursor: pointer; */
+  overflow: hidden;
 }
 
-.video-iframe {
+
+
+.fullscreen-icon {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1;
+  transform: translateY(40px);
+  opacity: 0;
+  transition: all 0.2s ease;
+
+}
+
+
+.video-container:hover .fullscreen-icon {
+  transform: translateY(0);
+  opacity:1;
+
+}
+
+.video-iframe, .video-container iframe {
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
+  /* opacity: 0; */
   height: 100%;
+  z-index: -1;
+
+}
+
+.video-iframe.show {
+  opacity: 1;
 }
 
 .video-btn {
@@ -976,10 +1007,10 @@ a {
   margin: auto;
   max-height: 150px;
   object-fit: cover;
-  filter: grayscale(1);
+  /* filter: grayscale(1); */
 }
 .ticker__item img:hover {
-  filter: grayscale(0);
+  /* filter: grayscale(0);s */
 }
 .ticker__item svg.blue polygon {
   fill: #294a5b;

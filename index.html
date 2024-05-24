@@ -11,8 +11,10 @@
 
 <body id="page-home">
     <!-- Scripts -->
-    <script defer src="js/vendor/bootstrap.bundle.min.js"></script>
-    <script defer src="js/vendor/jquery.min.js"></script>
+    <script  src="js/vendor/bootstrap.bundle.min.js"></script>
+    <script  src="js/vendor/jquery.min.js"></script>
+    <script src="https://player.vimeo.com/api/player.js"></script>
+
    
 
     <!-- Header -->
@@ -73,15 +75,16 @@
                     <div class="row row-cols-1 row-cols-lg-2">
                         <div class="col col-lg-7 mb-3">
                             <div class="shadow d-flex justify-content-center align-items-center video-container"
-                                style="background-image: url(image/hero2-thumb.jpg);"
-                                data-url="https://player.vimeo.com/video/948639766?autoplay=1"
-                                data-title="Video Embedded">
-                                <div class="img-overlay"></div>
-                                <div>
+                                data-url="https://player.vimeo.com/video/948639766?autoplay=1&controls=0&loop=1"
+                                data-title="Video Embedded" id="video_1">
+                                <a href="" class="fullscreen-icon"><svg fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M32 32C14.3 32 0 46.3 0 64v96c0 17.7 14.3 32 32 32s32-14.3 32-32V96h64c17.7 0 32-14.3 32-32s-14.3-32-32-32H32zM64 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v96c0 17.7 14.3 32 32 32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H64V352zM320 32c-17.7 0-32 14.3-32 32s14.3 32 32 32h64v64c0 17.7 14.3 32 32 32s32-14.3 32-32V64c0-17.7-14.3-32-32-32H320zM448 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v64H320c-17.7 0-32 14.3-32 32s14.3 32 32 32h96c17.7 0 32-14.3 32-32V352z"/></svg></a>
+
+                                <!-- <div class="img-overlay"></div> -->
+                                <!-- <div>
                                     <button class="bg-transparent shadow accent-color video-btn video-btn-small">
                                         <i class="fa-solid fa-play" style="margin-left: 5px;"></i>
                                     </button>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                         
@@ -116,7 +119,7 @@
                             <!-- 4.1, 4.2, 4.3.1 -->
                             <div class="swiper-wrapper">
                                 <!-- Slides -->
-                                <div class="swiper-slide">
+                                <!-- <div class="swiper-slide">
                                     <div class="shadow d-flex justify-content-center align-items-center video-container"
                                         style="background-image: url(image/dummy-img-900x600.jpg);"
                                         data-url="https://player.vimeo.com/video/948178861?autoplay=1"
@@ -159,7 +162,7 @@
                                             </button>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -455,7 +458,10 @@ Showcase properties with stunning, high-definition real estate videos that attra
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNHrcAkznoitsxhdUf-srPbcnRcT3IPxs&libraries=places"></script>
 
     <script defer src="js/reviews.js"></script>
-    
+    <script defer>
+
+
+
     </script>
 
 </body>
