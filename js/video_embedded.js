@@ -1,64 +1,65 @@
-var options01 = {
-  id: "948639766",
-  vimeo_logo: false,
-  controls: false,
-  loop: true,
-};
+$(".video-container").each(function () {
+  console.log("adsf");
 
-var video01Player = new Vimeo.Player("video_1", options01);
+  let options01 = {
+    id: $(this).data("url"),
+    vimeo_logo: false,
+    controls: false,
+    loop: true,
+  };
 
-// video01Player.setVolume(0);
+  let videoPlayer = new Vimeo.Player($(this).attr("id"), options01);
 
-if (video01Player) {
-  console.log(video01Player.element);
-}
+  videoPlayer.setVolume(0);
 
-video01Player.element.addEventListener("mouseenter", function () {
-  video01Player.setVolume(0)
-  video01Player.play();
-});
+  videoPlayer.element.addEventListener("mouseenter", function () {
+    videoPlayer.setVolume(0);
+    videoPlayer.play();
+  });
 
-video01Player.element.addEventListener("mouseleave", function () {
-  video01Player.pause();
-  // video01Player.setCurrentTime(0)
-});
+  videoPlayer.element.addEventListener("mouseleave", function () {
+    videoPlayer.pause();
+    // videoPlayer.setCurrentTime(0)
+  });
 
-function toggleFullscreen() {
-  if (!document.fullscreenElement) {
-  video01Player.setVolume(1)
+  function toggleFullscreen() {
+    if (!document.fullscreenElement) {
+      videoPlayer.setVolume(1);
 
-    if (video01Player.requestFullscreen) {
-      video01Player.requestFullscreen();
-    } else if (video01Player.mozRequestFullScreen) {
-      // Firefox
-      video01Player.mozRequestFullScreen();
-    } else if (video01Player.webkitRequestFullscreen) {
-      // Chrome, Safari, and Opera
-      video01Player.webkitRequestFullscreen();
-    } else if (video01Player.msRequestFullscreen) {
-      // IE/Edge
-      video01Player.msRequestFullscreen();
-    }
-  } else {
-    if (document.exitFullscreen) {
-      document.exitFullscreen();
-    } else if (document.mozCancelFullScreen) {
-      // Firefox
-      document.mozCancelFullScreen();
-    } else if (document.webkitExitFullscreen) {
-      // Chrome, Safari, and Opera
-      document.webkitExitFullscreen();
-    } else if (document.msExitFullscreen) {
-      // IE/Edge
-      document.msExitFullscreen();
+      if (videoPlayer.requestFullscreen) {
+        videoPlayer.requestFullscreen();
+      } else if (videoPlayer.mozRequestFullScreen) {
+        // Firefox
+        videoPlayer.mozRequestFullScreen();
+      } else if (videoPlayer.webkitRequestFullscreen) {
+        // Chrome, Safari, and Opera
+        videoPlayer.webkitRequestFullscreen();
+      } else if (videoPlayer.msRequestFullscreen) {
+        // IE/Edge
+        videoPlayer.msRequestFullscreen();
+      }
+    } else {
+      if (document.exitFullscreen) {
+        document.exitFullscreen();
+      } else if (document.mozCancelFullScreen) {
+        // Firefox
+        document.mozCancelFullScreen();
+      } else if (document.webkitExitFullscreen) {
+        // Chrome, Safari, and Opera
+        document.webkitExitFullscreen();
+      } else if (document.msExitFullscreen) {
+        // IE/Edge
+        document.msExitFullscreen();
+      }
     }
   }
-}
 
-jQuery(document).ready(function ($) {
-  $('.fullscreen-icon').on("click", function (e) {
-    e.preventDefault()
-    console.log("asdf");
+  $($(this).find(".fullscreen-icon")).on("click", function (e) {
+    e.preventDefault();
     toggleFullscreen();
   });
+
+  /* 
+
+*/
 });

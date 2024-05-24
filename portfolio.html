@@ -1,144 +1,178 @@
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="dark">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Stylesheet -->
-        <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
     <title>Stalwart - Portfolio</title>
-</head>
+  </head>
 
-<body id="page-portfolio">
+  <body id="page-portfolio">
     <!-- Scripts -->
-    <script defer src="js/vendor/bootstrap.bundle.min.js"></script>
-    <script defer src="js/vendor/jquery.min.js"></script>
-   
+    <script  src="js/vendor/bootstrap.bundle.min.js"></script>
+    <script  src="js/vendor/jquery.min.js"></script>
+    <script src="https://player.vimeo.com/api/player.js"></script>
 
- 
     <header class="sticky-top py-2 bg-dark-color" id="header-section"></header>
 
     <main class="text-white">
-        <!-- BANNER -->
-        <section class="section position-relative">
-            <div class="bg-overlay-1"></div>
-            <div class="r-container position-relative" style="z-index: 2;">
-                <div class="d-flex flex-column">
-                    <h2 class="font-2 text-white fw-bold">PORTFOLIO</h2>
+      <!-- BANNER -->
+      <section class="section position-relative">
+        <img src="image/portfolio.png" alt="" class="hero-img" />
+        <div class="image-overlay"></div>
+
+        <div class="r-container position-relative" style="z-index: 2">
+          <div class="d-flex flex-column">
+            <h2 class="font-2 text-white fw-bold">PORTFOLIO</h2>
+          </div>
+        </div>
+      </section>
+
+      <!-- in portfolio -->
+      <!-- our clients in about -->
+      <!-- faq in services -->
+
+      <section class="section">
+        <div class="r-container">
+          <div class="d-flex flex-column text-center gap-3">
+            <h5 class="accent-color lh-1 ls-2 fw-bold font-1">PORTFOLIO</h5>
+            <h3 class="font-2 lh-1 fw-bold mb-5">OUR LATEST PROJECT</h3>
+            <!-- 4.1, 4.2, 4.4, 4.3 -->
+            <div class="row row-cols-1 row-cols-lg-2 text-start row-gap-5">
+              <div class="col mb-3">
+                <div class="d-flex flex-column gap-3">
+                  <div
+                    class="shadow d-flex justify-content-center align-items-center video-container"
+                    data-url="https://player.vimeo.com/video/948178861?autoplay=1&controls=0&loop=1"
+                    data-title="Video Embedded"
+                    id="video_1"
+                  >
+                    <a href="" class="fullscreen-icon">
+                      <svg
+                        fill="#fff"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512"
+                      >
+                        <path
+                          d="M32 32C14.3 32 0 46.3 0 64v96c0 17.7 14.3 32 32 32s32-14.3 32-32V96h64c17.7 0 32-14.3 32-32s-14.3-32-32-32H32zM64 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v96c0 17.7 14.3 32 32 32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H64V352zM320 32c-17.7 0-32 14.3-32 32s14.3 32 32 32h64v64c0 17.7 14.3 32 32 32s32-14.3 32-32V64c0-17.7-14.3-32-32-32H320zM448 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v64H320c-17.7 0-32 14.3-32 32s14.3 32 32 32h96c17.7 0 32-14.3 32-32V352z"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="d-flex flex-column gap-2">
+                    <h5 class="font-2 accent-color fw-bold fs-4 m-0">
+                      DAUGHTER VS MOM - MOVIE
+                    </h5>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Ut elit tellus, luctus nec ullamcorper mattis.
+                    </p>
+                  </div>
                 </div>
-            </div>
-        </section>
+              </div>
 
-        <!-- in portfolio -->
-        <!-- our clients in about -->
-        <!-- faq in services -->
+              <div class="col mb-3">
+                <div class="d-flex flex-column gap-3">
+                  <div
+                    class="shadow d-flex justify-content-center align-items-center video-container"
+                    data-url="https://player.vimeo.com/video/948179862?autoplay=1&controls=0&loop=1"
+                    data-title="Video Embedded"
+                    id="video_2"
+                  >
+                    <a href="" class="fullscreen-icon">
+                      <svg
+                        fill="#fff"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512"
+                      >
+                        <path
+                          d="M32 32C14.3 32 0 46.3 0 64v96c0 17.7 14.3 32 32 32s32-14.3 32-32V96h64c17.7 0 32-14.3 32-32s-14.3-32-32-32H32zM64 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v96c0 17.7 14.3 32 32 32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H64V352zM320 32c-17.7 0-32 14.3-32 32s14.3 32 32 32h64v64c0 17.7 14.3 32 32 32s32-14.3 32-32V64c0-17.7-14.3-32-32-32H320zM448 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v64H320c-17.7 0-32 14.3-32 32s14.3 32 32 32h96c17.7 0 32-14.3 32-32V352z"
+                        />
+                      </svg>
+                    </a>
+                  </div>
 
-        <section class="section">
-            <div class="r-container">
-                <div class="d-flex flex-column text-center gap-3">
-                    <h5 class="accent-color lh-1 ls-2 fw-bold font-1">PORTFOLIO</h5>
-                    <h3 class="font-2 lh-1 fw-bold mb-5">OUR LATEST PROJECT</h3>
-                    <!-- 4.1, 4.2, 4.4, 4.3 -->
-                    <div class="row row-cols-1 row-cols-lg-2 text-start row-gap-5">
-                        <div class="col mb-3">
-                            <div class="d-flex flex-column gap-3">
-                                <div class="shadow d-flex justify-content-center align-items-center video-container"
-                                    style="background-image: url(image/dummy-img-900x600.jpg);"
-                                    data-url="https://player.vimeo.com/video/948178861?autoplay=1"
-                                    data-title="Video Embedded">
-                                    <div class="img-overlay"></div>
-                                    <div>
-                                        <button class="bg-transparent shadow accent-color video-btn video-btn-small">
-                                            <i class="fa-solid fa-play" style="margin-left: 5px;"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="d-flex flex-column gap-2">
-                                    <h5 class="font-2 accent-color fw-bold fs-4 m-0">DAUGHTER VS MOM - MOVIE</h5>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus
-                                        nec ullamcorper mattis.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col mb-3">
-                            <div class="d-flex flex-column gap-3">
-                                <div class="shadow d-flex justify-content-center align-items-center video-container"
-                                    style="background-image: url(image/dummy-img-900x600.jpg);"
-                                    data-url="https://player.vimeo.com/video/948179862?autoplay=1"
-                                    data-title="Video Embedded">
-                                    <div class="img-overlay"></div>
-                                    <div>
-                                        <button class="bg-transparent shadow accent-color video-btn video-btn-small">
-                                            <i class="fa-solid fa-play" style="margin-left: 5px;"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="d-flex flex-column gap-2">
-                                    <h5 class="font-2 accent-color fw-bold fs-4 m-0">DAUGHTER VS MOM - MOVIE</h5>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus
-                                        nec ullamcorper mattis.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col mb-3">
-                            <div class="d-flex flex-column gap-3">
-                                <div class="shadow d-flex justify-content-center align-items-center video-container"
-                                    style="background-image: url(image/dummy-img-900x600.jpg);"
-                                    data-url="https://player.vimeo.com/video/948182332?autoplay=1"
-                                    data-title="Video Embedded">
-                                    <div class="img-overlay"></div>
-                                    <div>
-                                        <button class="bg-transparent shadow accent-color video-btn video-btn-small">
-                                            <i class="fa-solid fa-play" style="margin-left: 5px;"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="d-flex flex-column gap-2">
-                                    <h5 class="font-2 accent-color fw-bold fs-4 m-0">DAUGHTER VS MOM - MOVIE</h5>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus
-                                        nec ullamcorper mattis.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        
-
-                        <div class="col mb-3">
-                            <div class="d-flex flex-column gap-3">
-                                <div class="shadow d-flex justify-content-center align-items-center video-container"
-                                    style="background-image: url(image/dummy-img-900x600.jpg);"
-                                    data-url="https://player.vimeo.com/video/948182429?autoplay=1"
-                                    data-title="Video Embedded">
-                                    <div class="img-overlay"></div>
-                                    <div>
-                                        <button class="bg-transparent shadow accent-color video-btn video-btn-small">
-                                            <i class="fa-solid fa-play" style="margin-left: 5px;"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="d-flex flex-column gap-2">
-                                    <h5 class="font-2 accent-color fw-bold fs-4 m-0">DAUGHTER VS MOM - MOVIE</h5>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus
-                                        nec ullamcorper mattis.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                    
-                    </div>
+                  <div class="d-flex flex-column gap-2">
+                    <h5 class="font-2 accent-color fw-bold fs-4 m-0">
+                      DAUGHTER VS MOM - MOVIE
+                    </h5>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Ut elit tellus, luctus nec ullamcorper mattis.
+                    </p>
+                  </div>
                 </div>
+              </div>
+              <div class="col mb-3">
+                <div class="d-flex flex-column gap-3">
+                  <div
+                    class="shadow d-flex justify-content-center align-items-center video-container"
+                    data-url="https://player.vimeo.com/video/948182332?autoplay=1&controls=0&loop=1"
+                    data-title="Video Embedded"
+                    id="video_3"
+                  >
+                    <a href="" class="fullscreen-icon">
+                      <svg
+                        fill="#fff"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512"
+                      >
+                        <path
+                          d="M32 32C14.3 32 0 46.3 0 64v96c0 17.7 14.3 32 32 32s32-14.3 32-32V96h64c17.7 0 32-14.3 32-32s-14.3-32-32-32H32zM64 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v96c0 17.7 14.3 32 32 32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H64V352zM320 32c-17.7 0-32 14.3-32 32s14.3 32 32 32h64v64c0 17.7 14.3 32 32 32s32-14.3 32-32V64c0-17.7-14.3-32-32-32H320zM448 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v64H320c-17.7 0-32 14.3-32 32s14.3 32 32 32h96c17.7 0 32-14.3 32-32V352z"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+
+                  <div class="d-flex flex-column gap-2">
+                    <h5 class="font-2 accent-color fw-bold fs-4 m-0">
+                      DAUGHTER VS MOM - MOVIE
+                    </h5>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Ut elit tellus, luctus nec ullamcorper mattis.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col mb-3">
+                <div class="d-flex flex-column gap-3">
+                  <div
+                    class="shadow d-flex justify-content-center align-items-center video-container"
+                    data-url="https://player.vimeo.com/video/948182429?autoplay=1&controls=0&loop=1"
+                    data-title="Video Embedded"
+                    id="video_4"
+                  >
+                    <a href="" class="fullscreen-icon">
+                      <svg
+                        fill="#fff"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512"
+                      >
+                        <path
+                          d="M32 32C14.3 32 0 46.3 0 64v96c0 17.7 14.3 32 32 32s32-14.3 32-32V96h64c17.7 0 32-14.3 32-32s-14.3-32-32-32H32zM64 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v96c0 17.7 14.3 32 32 32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H64V352zM320 32c-17.7 0-32 14.3-32 32s14.3 32 32 32h64v64c0 17.7 14.3 32 32 32s32-14.3 32-32V64c0-17.7-14.3-32-32-32H320zM448 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v64H320c-17.7 0-32 14.3-32 32s14.3 32 32 32h96c17.7 0 32-14.3 32-32V352z"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+
+                  <div class="d-flex flex-column gap-2">
+                    <h5 class="font-2 accent-color fw-bold fs-4 m-0">
+                      DAUGHTER VS MOM - MOVIE
+                    </h5>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Ut elit tellus, luctus nec ullamcorper mattis.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
-        </section>
-
-
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer></footer>
@@ -150,6 +184,5 @@
     <script defer src="js/video_embedded.js"></script>
     <script src="js/vendor/fslightbox.js"></script>
     <script src="js/masonry.js"></script>
-</body>
-
+  </body>
 </html>

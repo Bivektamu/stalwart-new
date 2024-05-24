@@ -26,7 +26,7 @@ function displayReviews(reviews) {
 
     const reviewElement = $(`
         <div class="swiper-slide ">
-            <div class="d-flex flex-column p-4 gap-3 bg-secondary-dark">
+            <div class="d-flex flex-column p-4 gap-3 bg-dark-color">
                 <ul class="d-flex flex-row gap-2 m-0 p-0">
                     ${Array(review.rating).fill('').map(_=>`<li class="text-warning"><i class="fa-solid fa-star"></i></li>`).toString().replaceAll(',','')}
                 </ul>
