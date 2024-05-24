@@ -14,6 +14,7 @@ if (video01Player) {
 }
 
 video01Player.element.addEventListener("mouseenter", function () {
+  video01Player.setVolume(0)
   video01Player.play();
 });
 
@@ -24,6 +25,8 @@ video01Player.element.addEventListener("mouseleave", function () {
 
 function toggleFullscreen() {
   if (!document.fullscreenElement) {
+  video01Player.setVolume(1)
+
     if (video01Player.requestFullscreen) {
       video01Player.requestFullscreen();
     } else if (video01Player.mozRequestFullScreen) {
