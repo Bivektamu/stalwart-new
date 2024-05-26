@@ -36,7 +36,13 @@ $(function () {
         initialSlide: 1,
         grabCursor: true,
         centeredSlides: true,
-        slidesPerView: 2,
+        slidesPerView: 3,
+        // slidesPerGroup: 1,
+
+        // loop:true,
+        // autoplay: {
+        //     delay: 3000
+        // },
         coverflowEffect: {
             rotate: 0,
             stretch: 0,
