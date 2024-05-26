@@ -23,7 +23,7 @@ $(function () {
       var formData = new FormData(event.target);
       console.log(formData);
       fetch(
-        "https://public.herotofu.com/v1/422e00c0-c028-11ee-891f-6d871096fc6",
+        "https://public.herotofu.com/v1/422e00c0-c028-11ee-891f-6d871096fc6f",
         {
           method: "POST",
           mode: "no-cors",
