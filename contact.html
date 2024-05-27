@@ -12,7 +12,7 @@
     <!-- Scripts -->
     <script  src="js/vendor/bootstrap.bundle.min.js"></script>
     <script  src="js/vendor/jquery.min.js"></script>
-    <script  src="js/vendor/swiper-bundle.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
     <header></header>
 
@@ -124,14 +124,11 @@
                     </button>
                   </div>
                 </div>
-                <!-- <form
+                <form
                   class="d-flex flex-column w-100 needs-validation mb-3 form"
                   novalidate
                   accept-charset="UTF-8"
-                > -->
-                <form 
-                class="d-flex flex-column w-100 needs-validation mb-3 form"
-                 accept-charset="UTF-8">
+                >
 
                   <div class="row row-cols-1 row-cols-lg-2 mb-3">
                     <div class="col mb-3">
@@ -250,7 +247,12 @@
                     ></textarea>
                   </div>
                   <div class="mb-3">
-                    <div class="g-recaptcha" data-sitekey="6LfhbA4pAAAAAF53rknatXFKmLgLJqL1TCkf71xa"></div>
+                    <div class="g-recaptcha" data-sitekey="6LfhbA4pAAAAAF53rknatXFKmLgLJqL1TCkf71xa">
+                      
+                    </div>
+                    <div class="invalid-feedback recaptcha my-4">
+                      Please verify you are a human.
+                    </div>
                     <button
                       type="submit"
                       class="btn button rounded-0 button-outline accent-color fw-bold submit_form font-1 py-3"
@@ -277,19 +279,13 @@
           aria-label="London Eye, London, United Kingdom"
         ></iframe>
 
-        <!-- <iframe loading="lazy" class="maps"
-                        src="https://maps.google.com/maps?q=London%20Eye%2C%20London%2C%20United%20Kingdom&amp;t=m&amp;z=14&amp;output=embed&amp;iwloc=near"
-                        title="London Eye, London, United Kingdom"
-                        aria-label="London Eye, London, United Kingdom"></iframe> -->
       </section>
     </main>
     <footer></footer>
     <script defer src="js/vendor/isotope.pkgd.min.js"></script>
-
     <script defer src="js/vendor/fslightbox.js"></script>
     <script defer src="js/masonry.js"></script>
     <script defer src="js/submit-form.js"></script>
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script defer src="js/script.js"></script>
 
   </body>
