@@ -21,7 +21,15 @@ $(function () {
       const toast = new bootstrap.Toast($(".success_msg")[0]);
       const errtoast = new bootstrap.Toast($(".error_msg")[0]);
       var formData = new FormData(event.target);
-      console.log(formData);
+      console.log(JSON.stringify(formData));
+      let jsonstr = {}
+      for (const [key, value] of formData) {
+        // console.log(key, value);
+        jsonstr[key] = value
+      }
+      console.log(jsonstr);
+
+      return
       fetch(
         "https://public.herotofu.com/v1/422e00c0-c028-11ee-891f-6d871096fc6f",
         {
