@@ -23,8 +23,6 @@ $(function () {
        $(".recaptcha.invalid-feedback").show();
 
     } else {
-      delete jsonstr['g-recaptcha-response']
-      return
       $(".submit_form").html("Sending...");
     }
 
