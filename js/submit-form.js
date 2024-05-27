@@ -16,48 +16,47 @@ $(function () {
     if (!form[0].checkValidity()) {
       event.preventDefault();
       event.stopPropagation();
-    } 
-    else if (!jsonstr["g-recaptcha-response"]) {
+    } else if (!jsonstr["g-recaptcha-response"]) {
       event.preventDefault();
       event.stopPropagation();
-       $(".recaptcha.invalid-feedback").show();
-    } 
-
-    else {
+      $(".recaptcha.invalid-feedback").show();
+    } else {
       event.preventDefault();
       $(".submit_form").html("Sending...");
-      $(".btn_submit-subscribe").html("Sending...");
-      const toast = new bootstrap.Toast($(".success_msg")[0]);
-      const errtoast = new bootstrap.Toast($(".error_msg")[0]);
-      delete jsonstr["g-recaptcha-response"]
-      console.log(JSON.stringify(jsonstr));
+      // const toast = new bootstrap.Toast($(".success_msg")[0]);
+      // const errtoast = new bootstrap.Toast($(".error_msg")[0]);
 
-      fetch(
-        "https://public.herotofu.com/v1/422e00c0-c028-11ee-891f-6d871096fc6f",
-        {
-          method: "POST",
-          headers: {
-            'Content-Type': 'application/json; charset=UTF-8'
-          },
-          body: JSON.stringify(jsonstr),
+      delete jsonstr["g-recaptcha-response"];
+
+      submit();
+
+      async function submit() {
+        try {
+          const res = await fetch(
+            // "https://public.herotofu.com/v1/cbe3ba00-1be3-11ef-bc5a-29d59b483c7e",
+            "https://public.herotofu.com/v1/422e00c0-c028-11ee-891f-6d871096fc6f",
+            {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json; charset=UTF-8",
+              },
+              body: JSON.stringify(jsonstr),
+            }
+          );
+
+          if (res.ok) {
+            $(".submit_form").html("Message sent");
+          }
+        } catch (error) {
+          if (error.message === "Failed to fetch") {
+
+            console.log("asdf");
+            window.location.href = "/thankyou.html";
+          }
         }
-      )
-        .then((response) => {
-          // Note: You won't be able to access the response body when mode is 'no-cors'
-          console.log(response);
-          console.log("Request made with no-cors mode");
-          toast.show();
-          $(".submit_form").html("Send Message");
-        })
-        .catch((error) => {
-          console.error("Error:", error);
-
-          errtoast.show();
-          $(".submit_form").html("Send Message");
-          $(".btn_submit-subscribe").html("SUBSCRIBE NOW");
-        });
+      }
     }
-
     form.addClass("was-validated");
+
   });
 });
