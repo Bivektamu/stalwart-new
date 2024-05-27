@@ -31,7 +31,7 @@ $(function () {
         boxes[k].animated = true;
         ele.classList.add("animated");
         const filtered_box = boxes.filter((ele) => ele !== boxes[k]);
-        setB(filtered_box);
+        boxes = [...filtered_box]
       }
     }
   }

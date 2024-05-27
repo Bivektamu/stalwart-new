@@ -8,18 +8,25 @@ $(".video-container").each(function () {
     loop: true,
   };
 
+  const thumb = $(this).find('.video-thumb')
+
   let videoPlayer = new Vimeo.Player($(this).attr("id"), options01);
 
   videoPlayer.setVolume(0);
 
   videoPlayer.element.addEventListener("mouseenter", function () {
     videoPlayer.setVolume(0);
-    videoPlayer.play();
+    videoPlayer.play().then(()=> {
+      console.log('adsf');
+      $(thumb).fadeOut()
+    });
   });
 
   videoPlayer.element.addEventListener("mouseleave", function () {
-    videoPlayer.pause();
-    // videoPlayer.setCurrentTime(0)
+    videoPlayer.pause().then(()=> {
+      $(thumb).fadeIn()
+    });
+    videoPlayer.setCurrentTime(0)
   });
 
   function toggleFullscreen() {

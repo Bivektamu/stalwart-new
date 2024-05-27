@@ -1,5 +1,5 @@
 $(function () {
-    var swiper = new Swiper('.swiper', {
+    var swiper = new Swiper('.swiper-reviews', {
         autoplay: {
             delay: 3000
         },
@@ -13,12 +13,9 @@ $(function () {
             360: {
                 slidesPerView: 1,
             },
-            // when window width is >= 768px
-            768: {
-                slidesPerView: 2,
-            },
+            
             // when window width is >= 1024px
-            1024: {
+            1200: {
                 slidesPerView: 3,
             }
         },

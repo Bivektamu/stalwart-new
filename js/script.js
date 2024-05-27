@@ -246,7 +246,7 @@ const logo = `
                             <path class="st0" d="M455.8,115.3v6.2h-1v-8.1h0.9l4.9,6.3v-6.3h1v8.1h-0.9L455.8,115.3z"/>
                         </g>
                         </svg>
-`
+`;
 
 const headerContent = `
         <div class="r-container">
@@ -256,11 +256,7 @@ const headerContent = `
                     ${logo}
                     </a>
 
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fa-solid fa-bars-staggered"></i>
-                    </button>
+                  
 
                     <div class="collapse navbar-collapse pt-lg-0 pt-3 " id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-3 ">
@@ -279,10 +275,17 @@ const headerContent = `
                         </ul>
                     </div>
                     <div class="d-flex gap-3">
-                        <a class=" px-4 py-2 btn button accent-color button-outline rounded-0 fw-bold font-1" href="contact.html">CONTACT</a>
-                        <a href="tel:+61433753635" class="px-4 py-2 btn button button-fill  rounded-0 fw-bold font-1">
-                        <i class="fa-solid fa-phone"></i>&nbsp;&nbsp;Call us
-                        </a>
+                    <a class=" px-4 py-2 btn button accent-color button-outline rounded-0 fw-bold font-1" href="contact.html">CONTACT</a>
+                    <a href="tel:+61433753635" id="call-btn" class="px-4 py-2 btn button button-fill  rounded-0 fw-bold font-1">
+                    <i class="fa-solid fa-phone"></i>&nbsp;&nbsp;Call us
+                    </a>
+                    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars-staggered"></i>
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                      
 
                     </div>
                 </div>
@@ -331,7 +334,19 @@ const footerContent = `
             </div>
         </div>
 `;
+
+
 $(function () {
+
+    window.onload = ()=> {
+        
+        $('#banner .hero-img').removeClass('scale')
+        setTimeout(() => {
+            $('#banner .wow').addClass('animated')
+        }, 400);
+
+    }
+   
   $(".nav-btn").on("click", function () {
     $(this).toggleClass("open");
   });
@@ -339,8 +354,8 @@ $(function () {
 
   $("footer").append(footerContent);
 
-  const pageName = $('body').attr('id').replace('page-', '') 
-  if(pageName) {
-    $(`.nav-link.${pageName}`).addClass('active')
+  const pageName = $("body").attr("id").replace("page-", "");
+  if (pageName) {
+    $(`.nav-link.${pageName}`).addClass("active");
   }
 });

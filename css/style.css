@@ -78,7 +78,7 @@ h3 {
 }
 
 h4 {
-  font-size: 32px;
+  /* font-size: 32px; */
 }
 
 h5 {
@@ -248,9 +248,6 @@ a {
   filter: none;
 }
 
-#header {
-  transition: all 0.5s ease;
-}
 
 .nav-link {
   border-bottom: 2px solid transparent;
@@ -280,6 +277,21 @@ a {
 .navbar-toggler {
   border: none;
   color: var(--accent-color);
+}
+.navbar-toggler .fa-xmark {
+  display: block;
+}
+
+.navbar-toggler.collapsed .fa-xmark {
+  display: none;
+}
+
+
+.navbar-toggler .fa-bars-staggered {
+  display: none;
+}
+.navbar-toggler.collapsed .fa-bars-staggered {
+  display: block;
 }
 
 .navbar-toggler:focus {
@@ -978,8 +990,9 @@ a {
 .h-screen {
   height: calc(100vh - 90px);
 }
-.fix-pos {
-  padding: 15rem 0;
+.py-15 {
+  padding-top: 15rem;
+  padding-bottom: 15rem;
 }
 
 .hero-img {
@@ -988,7 +1001,12 @@ a {
   position: absolute;
   top: 0;
   left: 0;
+  transition: 0.6s ease;
 }
+.hero-img.scale {
+  transform: scale(1.2);
+}
+
 .fix-pos .hero-img {
   object-fit: cover;
   object-position: 50% 25%;
@@ -1044,7 +1062,7 @@ a {
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 8em 0;
+  padding: 8em 2em;
   position: relative;
 
 }
@@ -1093,16 +1111,48 @@ input[type=number] {
   animation-name: fadeInUp;
 }
 
+.wow.delay-1 {
+  animation-delay: 0.1s;
+}
+
+.wow.delay-2 {
+  animation-delay: 0.2s;
+}
+
+.wow.delay-3 {
+  animation-delay: 0.3s;
+}
+
+.wow.delay-4 {
+  animation-delay: 0.4s;
+}
+
+
+
 
 @keyframes fadeInUp {
   0% {
     opacity: 0;
     transform: translateY(30px);
-    filter: blur(3px);
   }
   100% {
     opacity: 1;
     transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    filter: blur(3px);
+  }
+  30% {
+    filter: blur(3px);
+  }
+  100% {
+    opacity: 1;
     filter: blur(0);
   }
 }
@@ -1127,7 +1177,130 @@ input[type=number] {
   text-shadow: -1px 1px 0px rgba(0,0,0, 0.8);
 }
 
+#preloader {
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 9999;
+  background: var(--dark-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#preloader .wrapper {
+  width: 400px;
+  transition: all 0.6s ease;
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+#preloader svg {
+  width: 100%;
+}
+#reel {
+  width: 126px;
+  overflow: hidden;
+}
+
+#reel svg {
+  opacity: 0;
+  filter: blur(2px);
+  transition: opacity 0.6s ease;
+}
+
+#preloader.t1 #reel svg {
+  opacity: 1;
+  filter: blur(0);
+}
+#stalwart svg {
+  transform: translateY(-50px);
+  transition: all 0.6s ease;
+}
+#preloader.t1 #stalwart svg {
+  transform: translateY(0);
+  transition-delay: 0.4s;
+}
+#stalwart {
+  width: 238px;
+  margin: 20px auto 5px;
+  overflow: hidden;
+}
+
+#concept {
+  width: 138px;
+  margin: auto;
+  display: block;
+  overflow: hidden;
+}
+#concept svg {
+  transform: translateX(-140px);
+  transition: all 0.4s ease;
+
+}
+
+#preloader.t1 #concept svg {
+  transform: translateX(0);
+  transition-delay: 0.8s;
+
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+
+#page-home header {
+  transition: all 0.5s ease;
+  position: fixed;
+  z-index: 9;
+  width: 100%;
+}
+
+.hide {
+  transform: translateY(-100px);
+}
+
+.video-thumb {
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+@media only screen and (max-width: 1200px) {
+  h1 {
+    font-size: 60px;
+  }
+  .parallax {
+    padding: 5em 2em;
+  }
+}
+
 @media only screen and (max-width: 993px) {
+  #navbarSupportedContent {
+    position: fixed;
+    transform: none;
+    top: 90px;
+    left: 0;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 2em;
+    background: var(--dark-bg);
+    width: 100%;
+
+    
+  }
+  /* #call-btn {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  } */
   h1 {
     font-size: 48px;
   }
@@ -1141,7 +1314,7 @@ input[type=number] {
   }
 
   h4 {
-    font-size: 18px;
+    /* font-size: 18px; */
   }
 
   h5 {
