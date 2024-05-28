@@ -308,7 +308,7 @@ const footerContent = `
                             Email us
                         </a>
                     </div>
-                    <div class="d-flex flex-row flex-wrap gap-4 justify-content-center">
+                    <div class="row row-cols-4 ">
                         <a href="https://www.facebook.com/profile.php?id=100090067316854" class="font-2 link-social">FACEBOOK</a>
                         <a href="https://www.tiktok.com/@stalwart_prod" class="font-2 link-social">TIKTOK</a>
                         <a href="https://www.linkedin.com/company/stalwart-prod/" class="font-2 link-social">LINKEDIN</a>
@@ -335,18 +335,28 @@ const footerContent = `
         </div>
 `;
 
-
 $(function () {
+  let lastScrolVal = $(window).scrollTop();
 
-    window.onload = ()=> {
-        
-        $('#banner .hero-img').removeClass('scale')
-        setTimeout(() => {
-            $('#banner .wow').addClass('animated')
-        }, 400);
-
+  $(window).scroll(function () {
+    if ($(window).width() < 761) {
+      if (lastScrolVal < $(window).scrollTop()) {
+        if (!$("#call-btn").hasClass("show")) $("#call-btn").addClass("show");
+      } else {
+        if ($("#call-btn").hasClass("show")) $("#call-btn").removeClass("show");
+      }
     }
-   
+
+    lastScrolVal = $(window).scrollTop()
+  });
+
+  window.onload = () => {
+    $("#banner .hero-img").removeClass("scale");
+    setTimeout(() => {
+      $("#banner .wow").addClass("animated");
+    }, 400);
+  };
+
   $(".nav-btn").on("click", function () {
     $(this).toggleClass("open");
   });

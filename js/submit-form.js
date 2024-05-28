@@ -23,8 +23,6 @@ $(function () {
     } else {
       event.preventDefault();
       $(".submit_form").html("Sending...");
-      // const toast = new bootstrap.Toast($(".success_msg")[0]);
-      // const errtoast = new bootstrap.Toast($(".error_msg")[0]);
 
       delete jsonstr["g-recaptcha-response"];
 
@@ -33,8 +31,8 @@ $(function () {
       async function submit() {
         try {
           const res = await fetch(
-            "https://public.herotofu.com/v1/cbe3ba00-1be3-11ef-bc5a-29d59b483c7e",
-            // "https://public.herotofu.com/v1/422e00c0-c028-11ee-891f-6d871096fc6f",
+            // "https://public.herotofu.com/v1/cbe3ba00-1be3-11ef-bc5a-29d59b483c7e",
+            "https://public.herotofu.com/v1/422e00c0-c028-11ee-891f-6d871096fc6f",
             {
               method: "POST",
               headers: {
@@ -45,21 +43,20 @@ $(function () {
           );
 
           if (!res.ok) {
-            throw new Error('Error')
+            throw new Error("Error");
           }
         } catch (error) {
           if (error.message === "Failed to fetch") {
             window.location.href = "/thankyou.html";
+          } else {
+            const errtoast = new bootstrap.Toast($(".error_msg")[0]);
+            errtoast.show();
+
+            $(".submit_form").html("Send Message");
           }
-      const errtoast = new bootstrap.Toast($(".error_msg")[0]);
-      errtoast.show()
-
-          $(".submit_form").html("Send Message");
-
         }
       }
     }
     form.addClass("was-validated");
-
   });
 });

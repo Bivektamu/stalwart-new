@@ -1272,6 +1272,16 @@ input[type=number] {
   top: 0;
   left: 0;
 }
+
+.quote {
+  position: absolute;
+  bottom: 50px;
+  right: 60px;
+}
+.quote.left {
+  left: 60px;
+  right: auto;
+}
 @media only screen and (max-width: 1200px) {
   h1 {
     font-size: 60px;
@@ -1295,12 +1305,6 @@ input[type=number] {
 
     
   }
-  /* #call-btn {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-  } */
   h1 {
     font-size: 48px;
   }
@@ -1363,5 +1367,51 @@ input[type=number] {
 
   .nav-link {
     padding-block: 0.2rem;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .ticker__item {
+    width: 150px;
+    margin-right:20px;
+  }
+  .ticker__item img {
+    max-height: 80px;
+  }
+  .quote {
+    position: static;
+    display: block;
+  }
+  #call-btn {
+    position: fixed;
+    bottom: 0;
+    transform: translateY(32px);
+    left: 0;
+    width: 100%;
+    /* transition: transform 0.2s ease; */
+  }
+  #call-btn.show {
+    transform: translateY(0);
+    background: var(--accent-color);
+    color: var(--dark-2);
+  }
+  .sticky-top {
+    z-index: 9;
+  }
+
+  footer {
+    position: relative;
+    z-index: 9;
+  }
+  html {
+    font-size: 12px;
+  }
+
+  .logo-container {
+    width: 140px;
+  }
+
+  #navbarSupportedContent {
+    top:66px;
   }
 }
