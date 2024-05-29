@@ -10,7 +10,7 @@ $(function () {
         loop: false,
         breakpoints: {
             // when window width is >= 360px
-            360: {
+            760: {
                 slidesPerView: 1,
             },
             
@@ -49,7 +49,7 @@ $(function () {
         },
         breakpoints: {
             // when window width is >= 360px
-            360: {
+            760: {
                 slidesPerView: 1,
                 effect: "coverflow",
                 coverflowEffect: {

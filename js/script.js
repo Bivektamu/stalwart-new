@@ -308,7 +308,7 @@ const footerContent = `
                             Email us
                         </a>
                     </div>
-                    <div class="row row-cols-4 ">
+                    <div class="d-flex gap-4">
                         <a href="https://www.facebook.com/profile.php?id=100090067316854" class="font-2 link-social">FACEBOOK</a>
                         <a href="https://www.tiktok.com/@stalwart_prod" class="font-2 link-social">TIKTOK</a>
                         <a href="https://www.linkedin.com/company/stalwart-prod/" class="font-2 link-social">LINKEDIN</a>
@@ -324,7 +324,6 @@ const footerContent = `
                     class="d-flex flex-lg-row flex-column text-center gap-3 justify-content-between align-items-center">
                     <div class="logo-container">
                         ${logo}
-                        <!-- <img src="image/logo.png" alt="" class="img-fluid"> -->
                     </div>
                     <span class="text-end fs-7">
                         COPYRIGHT 2024 © STALWART PRODUCTION HOUSE<br />

@@ -239,9 +239,6 @@ a {
 .maps {
   width: 100%;
   height: 380px;
-  transition: filter 0.5s;
-  filter: brightness(100%) contrast(100%) saturate(0%) blur(0px)
-    hue-rotate(0deg);
 }
 
 .maps:hover {
@@ -939,9 +936,6 @@ a {
   color: white;
   font-size: 1.25rem;
   font-weight: bold;
-  display: flex;
-  justify-content: center;
-  position: relative;
 }
 
 .link-social:hover {
