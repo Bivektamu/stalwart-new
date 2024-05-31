@@ -1066,7 +1066,9 @@ a {
   }
 }
 
-
+.shadow iframe {
+  pointer-events: none;
+}
 
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
