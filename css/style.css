@@ -6,7 +6,7 @@
 @import url("../css/vendor/regular.css");
 @import url("../css/vendor/solid.css");
 @import url("../css/vendor/swiper-bundle.min.css");
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 @property --progress {
   syntax: "<integer>";
@@ -92,7 +92,6 @@ h6 {
 ul {
   list-style: none;
 }
-
 
 img {
   object-fit: cover;
@@ -245,7 +244,6 @@ a {
   filter: none;
 }
 
-
 .nav-link {
   border-bottom: 2px solid transparent;
   font-size: 1rem;
@@ -257,14 +255,12 @@ a {
 
 .nav-link:hover {
   color: var(--accent-color);
-  font-weight:600;
-
+  font-weight: 600;
 }
 
 .nav-link.active {
   color: var(--accent-color) !important;
-  font-weight:600;
-
+  font-weight: 600;
 }
 
 .nav-link:focus {
@@ -282,7 +278,6 @@ a {
 .navbar-toggler.collapsed .fa-xmark {
   display: none;
 }
-
 
 .navbar-toggler .fa-bars-staggered {
   display: none;
@@ -371,9 +366,18 @@ a {
   color: var(--gray-color) !important;
 }
 
+.text-black {
+  color: var(--dark-bg);
+}
+
 .bg-accent-color-hover:hover {
   background-color: var(--accent-color);
   color: white;
+}
+
+.bg-white {
+  background-color: var(--white);
+  color: var(--dark-bg);
 }
 
 .btn-dark {
@@ -646,8 +650,6 @@ a {
   overflow: hidden;
 }
 
-
-
 .fullscreen-icon {
   width: 20px;
   height: 20px;
@@ -658,17 +660,15 @@ a {
   transform: translateY(40px);
   opacity: 0;
   transition: all 0.2s ease;
-
 }
-
 
 .video-container:hover .fullscreen-icon {
   transform: translateY(0);
-  opacity:1;
-
+  opacity: 1;
 }
 
-.video-iframe, .video-container iframe {
+.video-iframe,
+.video-container iframe {
   position: absolute;
   left: 0;
   top: 0;
@@ -676,7 +676,6 @@ a {
   /* opacity: 0; */
   height: 100%;
   z-index: -1;
-
 }
 
 .video-iframe.show {
@@ -1058,7 +1057,6 @@ a {
   background-repeat: no-repeat;
   padding: 8em 2em;
   position: relative;
-
 }
 @keyframes ticker {
   100% {
@@ -1078,11 +1076,12 @@ input::-webkit-inner-spin-button {
 }
 
 /* Firefox */
-input[type=number] {
+input[type="number"] {
   -moz-appearance: textfield;
 }
 
-.form input::placeholder, .form textarea::placeholder {
+.form input::placeholder,
+.form textarea::placeholder {
   color: var(--bs-body-color); /* Change this to your desired color */
   opacity: 1; /* Make sure the opacity is set to 1 to fully apply the color */
 }
@@ -1090,8 +1089,6 @@ input[type=number] {
 .form select option {
   color: var(--dark-bg);
 }
-
-
 
 .wow {
   visibility: hidden;
@@ -1123,9 +1120,6 @@ input[type=number] {
   animation-delay: 0.4s;
 }
 
-
-
-
 @keyframes fadeInUp {
   0% {
     opacity: 0;
@@ -1137,7 +1131,6 @@ input[type=number] {
     filter: blur(0);
   }
 }
-
 
 @keyframes fadeIn {
   0% {
@@ -1157,25 +1150,24 @@ input[type=number] {
   text-align: justify;
 }
 
-
 .left-20 {
   left: 20px;
 }
 
 .pr-5 {
-  padding-right: 3rem!important;
+  padding-right: 3rem !important;
 }
 
-.have-shadow{
+.have-shadow {
   /* color: var(--dark-bg); */
   font-weight: 400;
   /* text-shadow: -2px 5px 6px rgba(225, 225, 225, 1); */
-  text-shadow: -1px 1px 0px rgba(0,0,0, 0.8);
+  text-shadow: -1px 1px 0px rgba(0, 0, 0, 0.8);
 }
 
 #preloader {
   position: fixed;
-  top:0;
+  top: 0;
   left: 0;
   width: 100%;
   height: 100vh;
@@ -1234,19 +1226,16 @@ input[type=number] {
 #concept svg {
   transform: translateX(-140px);
   transition: all 0.4s ease;
-
 }
 
 #preloader.t1 #concept svg {
   transform: translateX(0);
   transition-delay: 0.8s;
-
 }
 
 .no-scroll {
   overflow: hidden;
 }
-
 
 #page-home header {
   transition: all 0.5s ease;
@@ -1278,6 +1267,94 @@ input[type=number] {
   left: 60px;
   right: auto;
 }
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 99;
+  padding: 100px;
+  overflow: auto;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.6s ease;
+}
+.popup.show {
+  opacity: 1;
+  visibility: visible;
+}
+.close-btn {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  top: -50px;
+  display: block;
+  margin: 0 auto 60px;
+}
+
+.close-btn::after,
+.close-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 30px;
+  height: 2px;
+  background: var(--dark-bg);
+  transform: rotate(45deg);
+}
+
+.close-btn::after {
+  transform: rotate(-45deg);
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+.list-roman {
+  list-style-type: lower-roman;
+}
+
+.list-alpha {
+  list-style-type: lower-alpha;
+}
+.list-num {
+  list-style-type: num;
+}
+
+ul > li::marker {
+  font-weight: 500;
+}
+.list-num > li{
+  margin-bottom: 30px;
+}
+
+.list-sublist {
+  list-style: none;
+  padding-left: 0;
+}
+
+.list-sublist > li {
+  position: relative;
+  padding-left: 30px;
+}
+.list-sublist > li > .list-counter {
+  position: absolute;
+  left: 0;
+  font-weight: 500;
+}
+/* 
+  */
+
+.list-alpha li {
+  margin-bottom: 10px;
+}
+
 @media only screen and (max-width: 1200px) {
   h1 {
     font-size: 60px;
@@ -1298,8 +1375,6 @@ input[type=number] {
     padding-bottom: 2em;
     background: var(--dark-bg);
     width: 100%;
-
-    
   }
   h1 {
     font-size: 48px;
@@ -1327,7 +1402,6 @@ input[type=number] {
 
   .section {
     padding: 6em 2em 6em 2em;
-    
   }
 
   .divider {
@@ -1369,7 +1443,7 @@ input[type=number] {
 @media only screen and (max-width: 760px) {
   .ticker__item {
     width: 150px;
-    margin-right:20px;
+    margin-right: 20px;
   }
   .ticker__item img {
     max-height: 80px;
@@ -1408,6 +1482,6 @@ input[type=number] {
   }
 
   #navbarSupportedContent {
-    top:66px;
+    top: 66px;
   }
 }

@@ -327,11 +327,412 @@ const footerContent = `
                     </div>
                     <span class="text-end fs-7">
                         COPYRIGHT 2024 © STALWART PRODUCTION HOUSE<br />
-                        <a href="#" class="fw-medium accent-color">Privacy Policy</a> | <a href="#" class="fw-medium accent-color">Disclaimer</a> | <a href="#" class="fw-medium accent-color">Terms and conditions</a>
+                        <a href="#privacy" class="popup-btn fw-medium accent-color">Privacy Policy</a> | <a href="#disclaimer"  class="popup-btn fw-medium accent-color">Disclaimer</a> | <a href="#terms" class="popup-btn fw-medium accent-color">Terms and conditions</a>
                     </span>
                 </div>
             </div>
         </div>
+
+        <section class="popup bg-white" id="disclaimer">
+    <a href="" class="close-btn"></a>
+    <h2 class="mb-5 font-2">Disclaimer</h2>
+      <h4 class="mb-2 fw-bold">Consent and Release</h4>
+      <p class="mb-5">
+        By engaging with Stalwart Production House for photography and/or
+        videography services, the client hereby grants Stalwart Production House
+        the right to use and publish the resulting images and/or videos for
+        promotional and marketing purposes, including but not limited to online
+        and offline platforms.
+      </p>
+      <h4 class="mb-2 fw-bold">Ownership of Images and Videos</h4>
+      <p class="mb-5">
+        All photographs and videos captured by Stalwart Production House remain
+        the property of Stalwart Production House. The client is granted a
+        personal, non-exclusive, non-transferable license to use the images and
+        videos for personal purposes only, excluding any commercial use.
+      </p>
+      <h4 class="mb-2 fw-bold">Copyright and Reproduction</h4>
+      <p class="mb-5">
+        The copyright of all images and videos is retained by Stalwart
+        Production House. Unauthorized reproduction, distribution, or use of the
+        images and videos without the written permission of Stalwart Production
+        House is strictly prohibited.
+      </p>
+      <h4 class="mb-2 fw-bold">Client Cooperation</h4>
+      <p class="mb-5">
+        The client agrees to cooperate with the photographer/videographer to
+        achieve the best possible results. Stalwart Production House is not
+        responsible for the lack of coverage resulting from the client's failure
+        to provide reasonable assistance or cooperation.
+      </p>
+      <h4 class="mb-2 fw-bold">Liability</h4>
+      <p class="mb-5">
+        Stalwart Production House is not liable for any loss, damage, or injury
+        sustained by the client or any third party during the photography or
+        videography session. The client is responsible for the safety and
+        behaviour of all individuals participating in the session.
+      </p>
+      <h4 class="mb-2 fw-bold">Payment and Cancellation</h4>
+      <p class="mb-5">
+        A 50% non-refundable retainer fee is required to secure the booking. The
+        remaining balance is due 2 days prior to the scheduled session. In the
+        event of cancellation, the retainer fee is forfeited. Stalwart
+        Production House reserves the right to reschedule in case of unforeseen
+        circumstances.
+      </p>
+      <h4 class="mb-2 fw-bold">Editing and Delivery</h4>
+      <p class="mb-5">
+        Stalwart Production House will determine the selection of edited images
+        and/or videos to be delivered to the client. Additional editing requests
+        may incur extra charges. Delivery timelines are approximate as 48 hours
+        maximum but may vary based on workload and other factors.
+      </p>
+      <h4 class="mb-2 fw-bold">Force Majeure</h4>
+      <p class="mb-5">
+        Stalwart Production House is not liable for failure to perform its
+        obligations if such failure results from acts of God, natural disasters,
+        strikes, or any other force majeure event.
+      </p>
+      <h4 class="mb-2 fw-bold">Governing Law</h4>
+      <p class="mb-5">
+        This disclaimer is governed by the law. Any disputes arising out of or
+        in connection with this disclaimer shall be resolved through negotiation
+        or, if necessary, through the appropriate legal channels.
+      </p>
+      By engaging Stalwart Production House, the client acknowledges that they
+      have read, understood, and agreed to the terms and conditions outlined in
+      this disclaimer.
+  </section>
+
+  
+  <section class="popup bg-white" id="privacy">
+    <a href="" class="close-btn"></a>
+    <h2 class="mb-5 font-2">Privacy Policy</h2>
+      <p class="mb-5">
+        This Privacy Policy applies to all personal information collected by Stalwart Production House (we, us,
+or our) via the website located at  <a class="fw-medium text-black" href="https://stalwartprod.com.au/" target="_blank" rel="noopener noreferrer">https://stalwartprod.com.au/</a> (Website).
+      </p>
+      <h4 class="mb-3 fw-bold">What information do we collect?</h4>
+      <p class="mb-5">
+        The kind of Personal Information that we collect from you will depend on how you use the
+website. The Personal Information which we collect and hold about you may include:
+Name, phone number, email address, and address.
+      </p>
+
+      <h4 class="mb-3 fw-bold">Types of information</h4>
+
+      <p class="mb-3">The Privacy Act 1998 (Privacy Act) defines types of information, including Personal Information and Sensitive Information.
+      Personal Information means information or an opinion about an identified individual or an individual who is reasonably identifiable:
+      </p>
+      
+      <ul class="list-alpha pl-5 mb-3">
+        <li>whether the information or opinion is true or not; and</li>
+      <li>whether the information or opinion is recorded in a material form or not.</li>
+      </ul>
+      
+      <p class="mb-3">
+      If the information does not disclose your identity or enable your identity to be ascertained, it will in most cases not be classified as “Personal Information” and will not be subject to this privacy policy.<br /><br />
+      Sensitive Information is defined in the Privacy Act as including information or opinion about such things as an individual's racial or ethnic origin, political opinions, membership of a political association, religious or philosophical beliefs, membership of a trade union or other professional body, criminal record or health information.<br /><br />
+      Sensitive Information will be used by us only:
+    </p>
+      <ul class="list-alpha pl-5 mb-5">
+      <li>for the primary purpose for which it was obtained;</li>
+      <li>for a secondary purpose that is directly related to the primary purpose; and</li>
+      <li>with your consent or where required or authorized by law.</li>
+      </ul>
+      </p>
+
+      <h4 class="mb-3 fw-bold">How we collect your Personal Information</h4>
+
+        <ul class="list-alpha pl-5 mb-5">
+      <li>We may collect Personal Information from you whenever you input such information into the Website, or related app or provide it to us in any other way.</li>
+      <li>We may also collect cookies from your computer which enable us to tell when you use the Website and also to help customize your website experience. As a general rule, however, it is not possible to identify you personally from our use of cookies.</li>
+      <li>We generally don’t collect Sensitive Information, but when we do, we will comply with the preceding paragraph.</li>
+      <li>Where reasonable and practicable we collect your Personal Information from you only. However, sometimes we may be given information from a third party, in cases like this we will take steps to make you aware of the information that was provided by a third party.</li>
+      </ul>
+
+      <h4 class="mb-3 fw-bold">Purpose of collection</h4>
+        <ul class="list-alpha pl-5 mb-5">
+      <li>We collect Personal Information to provide you with the best service experience possible on the Website and keep in touch with you about developments in our business.</li>
+      <li>We customarily only disclose Personal Information to our service providers who assist us in operating the Website. Your Personal Information may also be exposed from time to time to maintenance and support personnel acting in the normal course of their duties.</li>
+      <li>By using our website, you consent to the receipt of direct marketing material. We will only use your Personal Information for this purpose if we have collected such information directly from you, and if it is material of a type that you would reasonably expect to receive from us. We do not use sensitive Personal Information in direct marketing activity. Our direct marketing material will include a simple means by which you can request not to receive further communications of this nature, such as an unsubscribe button link.</li>
+      </ul>
+
+      <h4 class="mb-3 fw-bold">Security, Access, and correction</h4>
+        <ul class="list-alpha pl-5 mb-5">
+      <li>We store your Personal Information in a way that reasonably protects it from unauthorized access, misuse, modification, or disclosure. When we no longer require your Personal Information for the purpose for which we obtained it, we will take reasonable steps to destroy and anonymize or de-identify it. Most of the Personal Information that is stored in our client files and records will be kept for a maximum of 7 years to fulfill our record- keeping obligations.</li>
+
+      <li>The Australian Privacy Principles:
+        <ul class="list-roman">
+          <li>permit you to obtain access to the Personal Information we hold about you in certain circumstances (Australian Privacy Principle 12); and</li>
+          <li>allow you to correct inaccurate Personal Information subject to certain exceptions (Australian Privacy Principle 13).</li>
+        </ul>
+      </li>
+      <li>Where you would like to obtain such access, please contact us in writing on the contact details set out at the bottom of this privacy policy.</li>
+      </ul>
+
+
+      <h4 class="mb-3 fw-bold">Complaint procedure</h4>
+      <p class="mb-5">
+      If you have a complaint concerning the manner in which we maintain the privacy of your personal information, please contact us as on the contact details set out at the bottom of this policy. All
+      complaints will be considered by Stalwart Production House and we may seek further information from you to clarify your concerns. If we agree that your complaint is well-founded, we will, in consultation with you, take appropriate steps to rectify the problem. If you remain dissatisfied with the outcome, you may refer the matter to the Office of the Australian Information Commissioner.
+     </p>
+      <h4 class="mb-3 fw-bold">Overseas transfer</h4>
+      <p class="mb-5">
+      Your Personal Information will not be disclosed to recipients outside Australia unless you expressly request us to do so. If you request us to transfer your Personal Information to an overseas recipient, the overseas recipient will not be required to comply with the Australian Privacy Principles and we will not be liable for any mishandling of your information in such circumstances.
+      </p>
+      <h4 class="mb-3 fw-bold">How to contact us about privacy</h4>
+      <p class="mb-5">
+      If you have any queries, or if you seek access to your Personal Information, or if you have a complaint about our privacy practices, you can contact us through: <a class="fw-medium text-black" href="mailto:info@stalwartprod.com.au">@stalwartprod.com.au.</a>
+      </p>
+  </section>
+
+  <section class="popup bg-white" id="terms">
+  <a href="" class="close-btn"></a>
+    <h2 class="mb-5 font-2">SERVICES AGREEMENT</h2>
+  <p class="mb-3">
+    <span class="fw-medium">Terms and conditions</span> on which Stalwart Production House <span class="fw-medium">provides services to consumers</span>
+    <br /> Stalwart Production House provides services on the following terms and conditions.
+  </p>
+  <ul class="list-num top-list">
+    <li>
+      <p class="fw-medium mb-2">The meaning of some words used in these terms and conditions</p>
+      <p class="mb-2">
+        <span class="fw-medium">We, us</span> or <span class="fw-medium">our</span> is a reference to Stalwart Production House;
+      </p>
+      <p class="mb-2">
+        <span class="fw-medium">You</span> or <span class="fw-medium">your</span> is a reference to the person to whom we are providing our Services and who is required to pay for the Services we provide;
+      </p>
+      <p class="mb-2">
+        <span class="fw-medium">Materials</span> means any materials, goods, parts, or items we need to buy to perform the Services;
+      </p>
+      <p class="mb-2">
+        <span class="fw-medium">Parties</span> is a reference to both us and you;
+      </p>
+      <p class="mb-2">
+        <span class="fw-medium">Premises</span> means the place where we will provide the Services; and
+      </p>
+      <p class="mb-2">
+        <span class="fw-medium">Services</span> means Media Production Services. The precise Services we will be providing to you will be stated in the quotation and as we agree from time to time.
+      </p>
+    </li>
+    <li>
+      <span class="fw-medium">Entering into a legally binding contract</span>
+      <ul class="list-alpha">
+        <li>A contract between you and us will come into being in one of two ways: <ul class="list-roman">
+            <li>When you sign the quotation we and you will enter into a legally binding contract on the date you sign.</li>
+            <li>Where you and we agree orally that we should provide the Services then there will be a legally binding contract on the date of our oral agreement.</li>
+          </ul>
+        </li>
+        <li>Before you sign the quotation or orally agree to us providing Services, we suggest you read through these terms and conditions. If you have any questions concerning them please ask us.</li>
+        <li>You should keep a copy of these terms and conditions for your records.</li>
+      </ul>
+    </li>
+    <li>
+      <span class="fw-medium">Providing the Services</span>
+      <ul class="list-alpha">
+        <li>Once we and you have entered into a legally binding contract we will normally start providing the Services to you straight away or on a date agreed between us without further discussion with you. Occasionally the Services will be provided at some other date or time or be dependent on a number of factors.</li>
+        <li> We aim to always provide you with the Services: <ul class="list-roman">
+            <li>using reasonable care and skill;</li>
+            <li>in compliance with commonly accepted practices and standards in the production industry; and</li>
+            <li>in compliance with New South Wales laws and regulations in force at the time we are carrying out the Services.</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <span class="fw-medium">Days and times when we normally provide the Services and performance of Services away from the Premises</span>
+      <ul class="list-alpha">
+        <li> Unless you and we agree otherwise, we will provide the Services on normal working days and start work no earlier than 9 am and finish work no later than 5 pm. A normal working day for us means Mondays to Fridays, excluding any bank or other national holidays. </li>
+        <li> The performance of some of the Services may take place away from the Premises. </li>
+      </ul>
+    </li>
+    <li>
+      <span class="fw-medium">Materials</span>
+      <br /> At the time we perform the Services, we may not have all the materials we need to perform the Services. This may be for a number of reasons such as: <ul class="list-alpha mb-2">
+        <li> we have not provided an estimate and cannot reasonably establish what Materials are necessary until we start performing the Services; or </li>
+        <li> where we have provided an estimate, it may not have been reasonably possible to establish the need for particular Materials at the time we provided the estimate. The need for the particular Materials may only be revealed when we start performing the Services; or </li>
+        <li> whether or not we have provided an estimate, the condition of an item or the area which is the subject of the Services may only become apparent when we start performing the Services and it was not reasonably possible to establish it until that point. </li>
+      </ul> In such cases, we may need to purchase Materials. If the Materials are available from a local supplier then we normally wish to travel to the supplier purchase the Materials and return to continue performing the Services. We normally charge for the travel time at our normal charging rate. If the Materials are not available from a local supplier we normally order the Materials and return on another occasion to continue to perform the Services. We will not charge you for any time spent in obtaining Materials if we have brought or ordered the wrong Materials. In such circumstances, we will normally charge for the time spent in making telephone calls to suppliers or our office to locate the required Materials.
+    </li>
+    <li>
+      <span class="fw-medium">Timing</span>
+      <ul class="list-sublist">
+        <li>
+          <span class="list-counter">6.1.</span>
+          <p class="fw-medium"> Our responsibility to perform the Services by particular dates </p> We aim to carry out the Services by the dates and times we either agree with you or notify to you. But we cannot guarantee or provide a firm commitment that: <ul class="list-alpha">
+            <li>we will start performing the Services by a specified date or time; or</li>
+            <li>we will complete the performance of all the Services by any specified date or time; or</li>
+            <li>the performance of any individual part of the Services will be completed by a specified date or time.</li>
+          </ul>
+        </li>
+        <li>
+          <span class="list-counter">6.2.</span>
+          <p class="fw-medium"> What can happen if we cannot start performing the Services or complete performing the Services </p>
+          <ul class="list-alpha">
+            <li> Subject to clause 6.3, if we do not start or complete performing the Services within a reasonable period from the date(s) we have agreed or notified then you may either: <ul class="list-roman">
+                <li>choose to continue to wait until we can start performing the Services or complete performing them; or</li>
+                <li>terminate the contract.</li>
+              </ul>
+            </li>
+            <li> Where we have started performing the Services and you decide you wish to terminate the contract you will only have to pay for any Services we have performed up to the date of termination and for any Materials which we have a legal obligation to pay for. If you have made payment(s) to us in excess of the amount of Services we have performed or Materials we have purchased, we will return the difference to you within 14 days of the termination. </li>
+            <li> What is a reasonable period of time depends on the type of Services we will be performing and the length of time they will take to perform. For example, if you and we believe that the Services will take only a few hours to perform, then if we fail to start performing the Services within eg half a day then you may have the right to terminate the contract. But if the Services are due to take several weeks to perform, then if we fail to start to perform the Services after a couple of weeks when we are due to or we do not perform the Services during a couple of weeks when we were due to, then in such circumstances, you may be entitled to terminate the contract. </li>
+          </ul>
+        </li>
+        <li>
+          <span class="list-counter">6.3.</span>
+          <p class="fw-medium"> Situations or events outside our reasonable control </p>
+          <ul class="list-alpha">
+            <li> In addition, there are certain situations or events which occur which are not within our reasonable control, including: <ul class="list-roman">
+                <li> if the Materials are not delivered on the date or at the time agreed with the supplier of the Materials (and it is not possible to obtain a replacement from an alternative supplier at all or within a reasonable amount of time, or the price charged by the alternative supplier is excessively higher than by the original supplier if ordered at short notice); </li>
+                <li> where you make a change in the Services you wish us to perform (and this results in, for example, us having to do further work or wait for new or different Materials); </li>
+                <li> where we have to wait for other providers of services (who have been engaged by you) to complete their work before we are able to perform the Services (or the relevant part of the Services dependent on the other provider if ordered at short notice); </li>
+                <li> where we are unable to gain access to the Premises to carry out the Services at the times and dates we have agreed with you;</li>
+                <li> where the areas in the Premises have not been readied by you as we and you have agreed in order for us to perform the Services;</li>
+              </ul>
+            </li>
+            <li> A <span class="fw-medium">Force Majeure Event</span> may also occur. A Force Majeure Event means an event adversely impacting our ability to provide Services that is beyond our reasonable control, such as fire, flood, natural or man-made disasters, civil commotion, industrial action, war (declared or undeclared), pandemic, and restrictions and prohibitions or any other actions by any government or quasi-government authorities. If we are unable to provide the Services because of a Force Majeure Event, then we: <ul class="list-roman">
+                <li>will notify you of this fact and to what extent our ability to perform our obligations under this Agreement is affected;</li>
+                <li>if we have issued a notice pursuant to subclause (a) above, we are temporarily relieved from performing the obligations specified in the notice for the duration of the delay arising directly out of the Force Majeure Event; and</li>
+                <li>will use our best endeavors to minimize the impact of any Force Majeure Event.</li>
+              </ul>
+            </li>
+            <li> If a delay arising directly out of a Force Majeure Event or an event specified in 6.3(a) continues for more than 3 months, you may: <ul class="list-roman">
+                <li>continue to wait until we are able to recommence performing the Services. If you are required to make any payments during this period (for example if we and you have agreed that you will pay us in staged amounts) then we will not require you to make any of the payments required until we are able to recommence performing the Services; or</li>
+                <li>terminate the contract. If you choose this option then you will only have to pay for any Services we have performed up to the date of termination and for any Materials for which we have a legal obligation to pay. If you have made payment(s) to us in excess of the amount of Services we have performed or Materials we have purchased, we will return the difference to you within 14 days of cancellation.</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    <li>
+      <p class="fw-medium"> Price, estimates, and payment </p>
+      <ul class="list-sublist">
+        <li>
+          <span class="list-counter">7.1</span>
+          <p class="mb-20 fw-medium">Our charges are based on time spent</p>
+          <p class="mb-20"> We normally charge for our services on a time basis. We spend in providing our Services. Our rates, excluding GST, for performing the Services are set out on the quotation we provide for the particular project. </p>
+          <p> The following is an example of how our charging structure works: If we complete performing the Services within 50 minutes where the charging period is 30 minutes we will charge for 2 x 30-minute periods. If we go over into another 30-minute period by a few minutes, at our discretion, we may charge up to the last period completed. </p>
+        </li>
+        <li>
+          <span class="list-counter">7.2</span>
+          <p class="mb-20 fw-medium">Our charges are based on estimate</p>
+          <ul class="list-alpha">
+            <li> If we provide an estimate then we will charge you the amount stated in the estimate rather than a charge based on the time taken to perform the Services. Note: we only provide estimates and not quotations or binding indications of how much we will charge. Estimates are normally valid for a period of 14 days from the date they are given. </li>
+            <li> As we provide an estimate we may need to charge you a higher amount than stated in the estimate. This can occur for a number of reasons, in particular where: <ul class="list-roman">
+                <li> what you require us to do changes, or the amount of work or Services you require us to provide increases or is different to what we and you agreed before we started performing the Services; or </li>
+                <li> when we start performing the Services it becomes apparent that the amount of Services we will need to perform or the type of work that is involved is different to what we agreed before we started performing the Services and we could not reasonably foresee this before we started performing the Services. </li>
+              </ul>
+            </li>
+            <li> Where the amount of work involved is greater than that stated in an estimate (as set out in paragraph (b)) then the following will happen: <ul class="list-roman">
+                <li> if the amount of extra time we need to spend to finish performing the Services will mean that the extra amount payable by you will not exceed 10% of the amount stated in the estimate, then we will carry on providing and completing the Services without contacting you and obtaining your agreement; </li>
+                <li> otherwise, we will not continue performing the Services and we will seek your approval to the extra amount that you will need to pay, unless: <ul class="list-upper-alpha">
+                    <li> it is not possible to contact you within a reasonable time; or </li>
+                    <li> it is not safe not to carry out and finish performing the Services (for example, your goods or premises may be left in a dangerous condition or unprotected from theft if the Services are not completed). </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <span class="list-counter">7.3</span>
+          <p class="fw-medium mb-2"> When payment is required </p>
+          <p class="mb-2">Payment for our Services and Materials is normally made in two ways, either:</p>
+          <ul class="list-alpha mb-2">
+            <li> at the time we finish performing the Services; or </li>
+            <li> in a number of staged payments, often involving: <ul class="list-roman">
+                <li> the payment of a deposit of 50% before we commence performing the Services; and </li>
+                <li> the payment of the remaining amount we will be charging you either on completion of the Services or in a number of fixed payments paid at regular periods. </li>
+              </ul>
+            </li>
+          </ul> Which option we will use will be indicated on the quotation.
+        </li>
+        <li>
+          <span class="list-counter">7.4</span>
+          <p class="fw-medium mb-2">GST</p> All amounts stated (whether orally or in writing) are exclusive of GST.
+        </li>
+        <li>
+          <span class="list-counter">7.5</span>
+          <p class="fw-medium mb-2"> If you do not pay when required to </p>
+          <p class="mb-2"> If you fail to make payment by the date or time we and you agree, we may: </p>
+          <ul class="list-alpha">
+            <li> charge you interest (at an interest rate of 5%) on any outstanding amounts if those outstanding amounts remain unpaid for more than 3 days from the date of our invoice or when we asked you first to pay them; and/or </li>
+            <li> if the amounts not paid represent more than 50% of the total value of the Services we are to perform for you, and there remain some Services that we have not yet performed, then we may suspend performing the remaining Services until you make payment. </li>
+          </ul>
+        </li>
+        <li>
+          <span class="list-counter">7.6</span>
+          <p class="fw-medium mb-2"> Where you seek to not pay amounts due to us </p> You will not refuse to pay any amount owing to us where there is only a minor or inconsequential defect or error in the performance of the Services. You will be entitled only to refuse to pay no more than a proportionate amount of any amount due.
+        </li>
+      </ul>
+    <li>
+      <p class="fw-medium mb-2"> Exclusion and limitation of liability </p>
+      <ul class="list-alpha">
+        <li> We do not exclude or limit liability for our negligence or negligent omission which causes you personal injury or death. </li>
+        <li> We shall only be liable for any loss or damage suffered by you which is a reasonably foreseeable consequence of a breach by us of this contract. In the event that any loss or damage suffered by you relates to your business activities then we exclude all liability for any business loss and in particular we exclude all liability for loss of profits or other economic loss arising out of a breach of this contract. </li>
+      </ul>
+    </li>
+    <li>
+      <p class="fw-medium mb-2"> Communicating with us </p>
+      <ul class="list-alpha">
+        <li> You can always telephone (our contact number is +61 433 753 635). </li>
+        <li> However, for important matters, we suggest that you use writing and send any communications by post to Noble Street, Allawah, New South Wales, 2218 (although we do accept e-mails). </li>
+      </ul>
+    </li>
+    <li>
+      <p class="fw-medium mb-2"> Termination of contract by you </p>
+      <ul class="list-alpha">
+        <li> Once we and you enter into a binding contract you will normally not be able to terminate the contract, except where we agree or as otherwise provided for in this contract. </li>
+        <li> If we agree to terminate the contract then you will be responsible for the cost of: <ul class="list-roman">
+            <li> any of our time in performing the Services up to the date we stop providing the Services; and </li>
+            <li> any Materials we are contractually committed to buying up to the date of termination (whether or not we need to pay for them before or after the date the contract between us and you is terminated). Any Materials we have purchased (but not used in performing the Services) will be delivered to you. </li>
+          </ul>
+        </li>
+        <li> In the circumstances stated in paragraph (b) we will first deduct the amounts for which you are responsible from any deposit you have paid. Any remaining deposit will be returned to you. If the amount owing is greater than the deposit we will return the invoice to you for the amount in excess of the deposit. </li>
+        <li> If you: <ul class="list-roman">
+            <li>purport to terminate the contract; or</li>
+            <li>give notice purporting to terminate the contract; or</li>
+            <li>otherwise do not fulfill your obligations (such as by not paying any sums due to be paid to us) in a way that amounts to you terminating the contract,</li>
+          </ul>
+        </li> we do not have to accept your termination of the contract except as provided in paragraph (b) or as otherwise provided for in this contract. However, we may choose to accept termination of the contract, and if we choose to do so you will be required to pay us a reasonable amount for the losses and costs (including loss of profit) we have suffered. If you have paid a deposit, this will be retained and if our reasonable losses and costs (including loss of profit) are greater than the deposit we have retained we will require you to pay for our losses and costs in excess of the deposit retained.
+      </ul>
+    </li>
+    <li>
+      <p class="fw-medium mb-2"> Amendments to the contract terms and conditions </p> We will have the right to amend the terms and conditions of this contract where: <ul class="list-alpha">
+        <li>we need to do so in order to comply with changes in the law or for regulatory reasons; or</li>
+        <li>we are changing the rates we charge for the provision of Services as provided in clause 7; or</li>
+        <li>we need to correct any errors or omissions (and this right includes the right to change any of the documentation that forms part of the contract), as long as such correction is minor and does not materially affect the contract.</li>
+      </ul> Where we are making any amendment we will give you 30 days' prior notice (unless the contract is terminated before that period).
+    </li>
+    <li>
+      <p class="fw-medium mb-2"> Contacting each other </p> If you wish to send us any notice or letter then it needs to be sent to Noble Street, Allawah, New South Wales, 2218. If we wish to send you a letter or notice we will use the address you have provided.
+    </li>
+    <li>
+      <p class="fw-medium mb-2"> Law and jurisdiction </p> This Agreement takes effect, is governed by, and shall be construed in accordance with the laws from time to time in force in New South Wales, Australia. The Parties submit to the non-exclusive jurisdiction of the courts of New South Wales.
+    </li>
+  </ul>
+</section>
+
+        <script>
+            $(function () {
+    
+                $(".popup-btn").click(function (e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    const ele = $(this).attr("href")
+                    $(ele).addClass("show");
+                    $("body").addClass("no-scroll");
+                });
+
+                  $(".close-btn").click(function (e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    $(".popup.show").removeClass("show");
+                    $("body").removeClass("no-scroll");
+                });
+            })
+        </script>
 `;
 
 $(function () {
@@ -346,10 +747,13 @@ $(function () {
       }
     }
 
-    lastScrolVal = $(window).scrollTop()
+    lastScrolVal = $(window).scrollTop();
   });
-
   window.onload = () => {
+    $("header").append(headerContent);
+
+    $("footer").append(footerContent);
+
     $("#banner .hero-img").removeClass("scale");
     setTimeout(() => {
       $("#banner .wow").addClass("animated");
@@ -359,9 +763,8 @@ $(function () {
   $(".nav-btn").on("click", function () {
     $(this).toggleClass("open");
   });
-  $("header").append(headerContent);
 
-  $("footer").append(footerContent);
+
 
   const pageName = $("body").attr("id").replace("page-", "");
   if (pageName) {
