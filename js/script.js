@@ -736,6 +736,12 @@ Name, phone number, email address, and address.
 `;
 
 $(function () {
+
+  
+  $("header").append(headerContent);
+
+  $("footer").append(footerContent);
+  
   let lastScrolVal = $(window).scrollTop();
 
   $(window).scroll(function () {
@@ -750,9 +756,6 @@ $(function () {
     lastScrolVal = $(window).scrollTop();
   });
   window.onload = () => {
-    $("header").append(headerContent);
-
-    $("footer").append(footerContent);
 
     $("#banner .hero-img").removeClass("scale");
     setTimeout(() => {
