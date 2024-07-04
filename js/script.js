@@ -410,7 +410,7 @@ const footerContent = `
     <h2 class="mb-5 font-2">Privacy Policy</h2>
       <p class="mb-5">
         This Privacy Policy applies to all personal information collected by Stalwart Production House (we, us,
-or our) via the website located at  <a class="fw-medium text-black" href="https://stalwartprod.com.au/" target="_blank" rel="noopener noreferrer">https://stalwartprod.com.au/</a> (Website).
+or our) via the website located at  <a class="fw-medium text-black" href="https://stalwartprod.com.au/" target="_blank" rel="noopener noreferrer">https://stalwartprod.com.au/</a>.
       </p>
       <h4 class="mb-3 fw-bold">What information do we collect?</h4>
       <p class="mb-5">
@@ -483,7 +483,7 @@ Name, phone number, email address, and address.
       </p>
       <h4 class="mb-3 fw-bold">How to contact us about privacy</h4>
       <p class="mb-5">
-      If you have any queries, or if you seek access to your Personal Information, or if you have a complaint about our privacy practices, you can contact us through: <a class="fw-medium text-black" href="mailto:info@stalwartprod.com.au">@stalwartprod.com.au.</a>
+      If you have any queries, or if you seek access to your Personal Information, or if you have a complaint about our privacy practices, you can contact us through: <a class="fw-medium text-black" href="mailto:info@stalwartprod.com.au">info@stalwartprod.com.au.</a>
       </p>
   </section>
 

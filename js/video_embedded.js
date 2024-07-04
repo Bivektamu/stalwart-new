@@ -8,7 +8,7 @@ $(".video-container").each(function () {
     loop: true,
   };
 
-  const thumb = $(this).find('.video-thumb')
+  const thumb = $(this).find(".video-thumb");
 
   let videoPlayer = new Vimeo.Player($(this).attr("id"), options01);
 
@@ -16,20 +16,22 @@ $(".video-container").each(function () {
 
   videoPlayer.element.addEventListener("mouseenter", function () {
     videoPlayer.setVolume(0);
-    videoPlayer.play().then(()=> {
-      console.log('adsf');
-      $(thumb).fadeOut()
+    videoPlayer.play().then(() => {
+      $(thumb).fadeOut();
     });
   });
 
   videoPlayer.element.addEventListener("mouseleave", function () {
-    videoPlayer.pause().then(()=> {
-      $(thumb).fadeIn()
-    });
-    videoPlayer.setCurrentTime(0)
+    if (!document.fullscreenElement) {
+      videoPlayer.pause().then(() => {
+        $(thumb).fadeIn();
+      });
+    }
+
+    videoPlayer.setCurrentTime(0);
   });
 
-  function toggleFullscreen() {
+  function openFullscreen() {
     if (!document.fullscreenElement) {
       videoPlayer.setVolume(1);
 
@@ -45,25 +47,21 @@ $(".video-container").each(function () {
         // IE/Edge
         videoPlayer.msRequestFullscreen();
       }
-    } else {
-      if (document.exitFullscreen) {
-        document.exitFullscreen();
-      } else if (document.mozCancelFullScreen) {
-        // Firefox
-        document.mozCancelFullScreen();
-      } else if (document.webkitExitFullscreen) {
-        // Chrome, Safari, and Opera
-        document.webkitExitFullscreen();
-      } else if (document.msExitFullscreen) {
-        // IE/Edge
-        document.msExitFullscreen();
-      }
     }
   }
 
+  document.addEventListener("fullscreenchange", () => {
+    console.log("asdf");
+    if (!document.fullscreenElement) {
+      videoPlayer.pause().then(() => {
+        $(thumb).fadeIn();
+      });
+    }
+  });
+
   $($(this).find(".fullscreen-icon")).on("click", function (e) {
     e.preventDefault();
-    toggleFullscreen();
+    openFullscreen();
   });
 
   /* 
