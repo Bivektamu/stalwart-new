@@ -276,7 +276,7 @@ const headerContent = `
                     </div>
                     <div class="d-flex gap-3">
                     <a class=" px-4 py-2 btn button accent-color button-outline rounded-0 fw-bold font-1" href="contact.html">CONTACT</a>
-                    <a href="tel:+61433753635" id="call-btn" class="px-4 py-2 btn button button-fill  rounded-0 fw-bold font-1">
+                    <a href="tel:+61452667876" id="call-btn" class="px-4 py-2 btn button button-fill  rounded-0 fw-bold font-1">
                     <i class="fa-solid fa-phone"></i>&nbsp;&nbsp;Call us
                     </a>
                     <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
@@ -300,7 +300,7 @@ const footerContent = `
                 <div class="d-flex flex-column justify-content-center align-items-center text-center">
                     <h3 class="font-2 fs-1 mb-3">HAVE IDEA IN YOUR MIND ? LET'S START YOUR PROJECT WITH&nbsp;US</h3>
                     <div class="mb-5 d-flex gap-3">
-                        <a class="btn button rounded-0 text-dark  bg-accent-color fw-bold " href="tel:++61433753635">
+                        <a class="btn button rounded-0 text-dark  bg-accent-color fw-bold " href="tel:+61452667876">
                             <i class="fa-solid fa-phone"></i>&nbsp;&nbsp;Call us
                         </a>
                         <a class="btn button rounded-0 button-outline accent-color fw-bold" href="mailto:info@stalwartprod.com.au">
